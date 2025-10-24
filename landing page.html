@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skincare Landing Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: url('another.jpg') no-repeat center center/cover;
+      min-height: 100vh;
+      color: #000;
+    }
+
+    header {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      padding: 20px 80px;
+      
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 150px;
+      text-align: right;
+      
+    }
+
+    .nav-links a {
+      text-decoration:underline;
+      color: black;
+      font-weight: bold;
+      font-size: 28px;
+      transition: color 0.2s ease;
+      text-align: right;
+      
+    }
+
+    .nav-links a:hover {
+      color: #cb168f;
+      display: flex;
+      
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      min-height: 80vh;
+      padding: 50px 100px;
+    }
+
+    .hero-text {
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center; 
+    }
+
+    .hero-text h1 {
+      font-size: 80px;
+      font-weight: 800;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .hero-text p {
+      font-size: 28px;
+      margin-bottom: 30px;
+      line-height: 1.5;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    button {
+      background-color: #d18dc3;
+      color: white;
+      border: none;
+      padding: 18px 20px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 20px;
+      text-align: center;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    button:hover {
+      background-color: #21071b;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        padding: 30px;
+        text-align: center;
+        justify-content: center;
+      }
+
+      .hero-text h1 {
+        font-size: 80px;
+      }
+
+      .nav-links {
+        gap: 50px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="">HOME</a></li>
+        <li><a href="about us.html">ABOUT US</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="log in page.html">LOG IN</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>SKIN<br>CARE</h1>
+      <p>EXPLORE OUR RANGE OF GENTLE AND EFFECTIVE SKINCARE PRODUCTS</p>
+      <button id="getStartedBtn">GET STARTED</button>
+    </div>
+  </section>
+
+  <script>
+    document.getElementById("getStartedBtn").addEventListener("click", function() {
+      alert("Welcome! Let's explore our skincare collection.");
+    });
+  </script>
+</body>
+</html>
